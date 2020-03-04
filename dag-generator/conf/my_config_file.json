@@ -1,0 +1,25 @@
+{
+  "name":"my-dag-name",
+  "enviroment":"prd",
+  "origin_system":"my-sys-origin",
+  "project":"my_project",
+  "bq_raw_project":"my-bq-raw-project",
+  "bq_raw_dataset":"my-bq-dataset",
+  "sql_folder" :"sql",
+  "country_id":"cl",
+  "business_unit":"my-business-id",
+  "extension_file":".dat.csv",
+  "landing_bucket":"my-landing-bucket",
+  "raw_bucket":"my-raw-bucket",
+  "generate_dummy_operator":["dummy1","dummy2"],
+  "raw_tables":[
+     "my-raw-bq tables"
+  ],
+  "table_partitions":{
+    "my-raw-table":"my-partition-column='@my-value-column'"
+  },
+  "orquestation":[
+      "begin >> task1 >> end",
+      "begin >> [task2,task3,task4,task5] >> end"
+  ]
+}
